@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cfb.blog.dao.test.inter.TestInter">
+	<select id="selectUserForm" parameterType="Map" 
+			resultType="com.cfb.blog.entity.user.UserForm">
+		SELECT FULL_NAME AS fullName FROM user
+	</select>
+	
+	<insert id="insertUser" parameterType="Map">
+		INSERT INTO `user` (USER_NAME) VALUES ("新建1");
+	</insert>
+</mapper>
