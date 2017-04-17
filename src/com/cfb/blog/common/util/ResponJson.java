@@ -10,7 +10,7 @@ public class ResponJson {
 	//返回信息
 	private String msg;
 	//被操作ID
-	private Long objId;
+	private Long id;
 	//对象信息
 	private Object object;
 
@@ -30,12 +30,12 @@ public class ResponJson {
 		this.msg = msg;
 	}
 
-	public Long getObjId() {
-		return objId;
+	public Long getId() {
+		return id;
 	}
 
-	public void setObjId(Long objId) {
-		this.objId = objId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public Object getObject() {
