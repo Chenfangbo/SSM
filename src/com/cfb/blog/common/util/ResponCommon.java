@@ -4,7 +4,7 @@ package com.cfb.blog.common.util;
  *@author 臻宝
  *@date 2017年3月25日 下午10:45:44
  */
-public class ResponJson {
+public class ResponCommon {
 	//成功标识
 	private boolean isSuccess;
 	//返回信息
