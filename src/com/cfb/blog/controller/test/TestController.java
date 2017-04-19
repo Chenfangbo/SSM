@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.cfb.blog.common.util.RequestCommon;
 import com.cfb.blog.entity.user.UserForm;
 import com.cfb.blog.service.test.ITestservice;
 import com.github.pagehelper.Page;
@@ -30,6 +31,7 @@ public class TestController {
 	
 	@RequestMapping("/getFullName")
 	public String getFullName(){
+		RequestCommon requestCommon = null;
 		Page<UserForm> userForm = testservice.selectUser();
 		System.out.println(userForm.get(0).getFullName());
 		return "HelloWorld";
